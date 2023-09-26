@@ -11,7 +11,7 @@ export function ClipBoardTooltip({ children }: ClipBoardProps) {
   const [IsCopied, setIsCopied] = useState(false);
   const email = 'elles.2212@gmail.com';
 
-  const handleClipBoard = () => {
+  const copyToClipBoard = () => {
     navigator.clipboard.writeText(email);
     setText(`Email Copiado!! ${email}`);
     setIsCopied(true);
@@ -26,8 +26,8 @@ export function ClipBoardTooltip({ children }: ClipBoardProps) {
     <S.ContainerClipBoard
       tabIndex={0}
       IsCopied={IsCopied}
-      onClick={handleClipBoard}
-      onKeyDown={(e) => e.key === 'Enter' && handleClipBoard()}
+      onClick={copyToClipBoard}
+      onKeyDown={(e) => e.key === 'Enter' && copyToClipBoard()}
       onMouseLeave={showTooltipText}
       onBlur={showTooltipText}
     >
