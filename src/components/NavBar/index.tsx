@@ -5,12 +5,12 @@ import * as S from './NavBar.styles';
 
 type NavBarProps = {
   isOpenMenu: boolean;
-  toggleMenu: () => void;
+  onToggleMenu: () => void;
 };
 
-export function NavBar({ isOpenMenu, toggleMenu }: NavBarProps) {
+export function NavBar({ isOpenMenu, onToggleMenu }: NavBarProps) {
   return (
-    <S.ContainerNavBar className={isOpenMenu ? 'openMenu' : ''} onClick={toggleMenu}>
+    <S.ContainerNavBar className={isOpenMenu ? 'openMenu' : ''} onClick={onToggleMenu}>
       <S.ContentNavBar id="menu" role="menu" data-state={isOpenMenu ? 'opened' : 'closed'}>
         <NavBarItem url="/">
           <FaHome />

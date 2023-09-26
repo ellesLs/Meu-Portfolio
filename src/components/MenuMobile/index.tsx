@@ -1,14 +1,14 @@
 import * as S from './MenuMobile.styles';
 
 type MenuMobileProps = {
-  toggleMenu: () => void;
+  onToggleMenu: () => void;
   isOpenMenu: boolean;
 };
 
-export function MenuMobile({ toggleMenu, isOpenMenu }: MenuMobileProps) {
+export function MenuMobile({ onToggleMenu, isOpenMenu }: MenuMobileProps) {
   return (
     <S.ContainerMenuMobile
-      onClick={toggleMenu}
+      onClick={onToggleMenu}
       // onKeyDown={(e) => e.key === 'Enter' && toggleMenu()}
       isOpen={isOpenMenu}
       aria-label={`${isOpenMenu ? 'Open' : 'Close'} Menu`}

@@ -19,8 +19,8 @@ export function Header() {
       <Area>
         <S.ContentHeader>
           <Logo />
-          <MenuMobile toggleMenu={handleToogleMenu} isOpenMenu={isOpenMenu} />
-          <NavBar isOpenMenu={isOpenMenu} toggleMenu={handleToogleMenu} />
+          <MenuMobile onToggleMenu={handleToogleMenu} isOpenMenu={isOpenMenu} />
+          <NavBar isOpenMenu={isOpenMenu} onToggleMenu={handleToogleMenu} />
         </S.ContentHeader>
       </Area>
     </S.ContainerHeader>
