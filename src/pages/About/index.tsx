@@ -30,7 +30,7 @@ export function About() {
                   Meu nome é <span>Elles do Nascimento Santana Desenvolvedor Front-End</span> Lorem
                   ipsum dolor sit amet consectetur adipisicing elit. Nam iste nobis hic explicabo
                   soluta debitis accusamus ad repellat corrupti voluptatem tempore, accusantium
-                  labore, quae ullam quo eos repudiandae praesentium quis!
+                  labore!
                 </p>
               </S.InfoAbout>
             </S.ContainerInfoAbout>
