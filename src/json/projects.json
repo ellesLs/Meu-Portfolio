@@ -1,0 +1,40 @@
+[
+    {
+        "id": "1p",
+        "title": "Meu Portfólio",
+        "images": {
+            "desktopImg": "branding-desktop",
+            "mobileImg": "branding-mobile"
+        },
+        "description": "Projeto do meu portfolio pessoal feito em React com TypeScript e usando Styled-Components para a estilização",
+        "toolsUsed": [
+            "HTML",
+            "CSS",
+            "React",
+            "typescript",
+            "Styled-Components"
+        ],
+        "liveUrl": "",
+        "gitHubUrl": "https://github.com/ellesLs",
+        "modal": true
+    },
+    {
+        "id": "2p",
+        "title": "Agência de Branding",
+        "images": {
+            "desktopImg": "branding-desktop",
+            "mobileImg": "branding-mobile"
+        },
+        "description": "Um site sobre Branding e marketing digital",
+        "toolsUsed": [
+            "HTML",
+            "CSS",
+            "React",
+            "typescript",
+            "Styled-Components"
+        ],
+        "liveUrl": "https://www.google.com",
+        "gitHubUrl": "https://github.com/ellesLs",
+        "modal": true
+    }
+]
