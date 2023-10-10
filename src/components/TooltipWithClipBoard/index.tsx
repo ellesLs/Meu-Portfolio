@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-import * as S from './ClipBoardTooltip.styles';
+import * as S from './TooltipWithClipBoard';
 
 type ClipBoardProps = {
   children: React.ReactNode;
 };
 
-export function ClipBoardTooltip({ children }: ClipBoardProps) {
+export function TooltipWithClipBoard({ children }: ClipBoardProps) {
   const [text, setText] = useState('Click para copiar o Email!');
   const [IsCopied, setIsCopied] = useState(false);
   const email = 'elles.2212@gmail.com';

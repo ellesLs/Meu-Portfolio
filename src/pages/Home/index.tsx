@@ -2,7 +2,7 @@ import { Area } from '../../components/Area';
 import { ButtonLink } from '../../components/ButtonLink';
 import { SocialIcons } from '../../components/SocialIcons';
 import { GenericIcon } from '../../components/GenericIcon';
-import { ClipBoardTooltip } from '../../components/ClipBoardTooltip';
+import { TooltipWithClipBoard } from '../../components/TooltipWithClipBoard';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
@@ -40,9 +40,9 @@ export function Home() {
                     url={'https://www.linkedin.com/in/elles-do-nascimento-santana-a9728b240/'}
                   />
                   <GenericIcon icon={<AiFillGithub />} url={'https://github.com/ellesLs'} />
-                  <ClipBoardTooltip>
+                  <TooltipWithClipBoard>
                     <GenericIcon icon={<AiOutlineMail />} />
-                  </ClipBoardTooltip>
+                  </TooltipWithClipBoard>
                 </SocialIcons>
               </S.ContainerLinks>
             </S.InfoHome>
