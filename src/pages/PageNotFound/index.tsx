@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Area } from '../../components/Area';
 
-import ImgPage404 from './images/page404-img.png';
+import ImgPage404 from './imagesPageNotFound/page404-img.png';
 
 import * as S from './PageNotFound.styles';
 
