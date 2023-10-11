@@ -8,11 +8,13 @@ const showIntroduction = keyframes`
   }
 `;
 
-const showImage = keyframes`
-  from {
-    opacity: 0;
-  }
-`;
+// const showImage = keyframes`
+//   from {
+//     opacity: 0;
+//   }
+// `;
+
+/* animation: ${showImage} 1.5s ease-in-out forwards; */
 
 const float = keyframes`
   0% {
@@ -141,7 +143,6 @@ export const FigureHome = styled.figure`
   flex: 1;
   display: flex;
   justify-content: center;
-  animation: ${showImage} 1.5s ease-in-out forwards;
 
   img {
     width: min(700px, 110%);
