@@ -12,7 +12,7 @@ import images from './Images';
 import * as S from './Home.styles';
 
 export function Home() {
-  const chosenImage = Math.floor(Math.random() * (images.length - 1));
+  const selectedImage = Math.floor(Math.random() * (images.length - 1));
 
   return (
     <>
@@ -49,7 +49,7 @@ export function Home() {
               </S.ContainerLinks>
             </S.InfoHome>
             <S.FigureHome>
-              <img src={images[chosenImage]} alt="Banner Image" title="banner" />
+              <img src={images[selectedImage]} alt="Banner Image" title="banner" />
             </S.FigureHome>
           </S.ContentHome>
         </Area>
