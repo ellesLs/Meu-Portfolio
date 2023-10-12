@@ -8,15 +8,17 @@ import { AboutListIcons } from './components/AboutListIcons';
 import otter from './otter.png';
 
 import * as S from './About.styles';
+import { containerVariants } from '../../Constants/containerVariants';
 
 export function About() {
   return (
     <>
       <S.ContainerAbout
-        initial={{ width: '100%', opacity: 0 }}
-        animate={{ width: '100%', opacity: 1 }}
-        exit={{ x: window.innerWidth, opacity: 0 }}
-        transition={{ duration: 0.4, ease: 'backIn' }}
+        key="about"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
       >
         <Area>
           <S.ContentAbout>

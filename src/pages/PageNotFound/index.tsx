@@ -4,15 +4,17 @@ import { Area } from '../../components/Area';
 import ImgPage404 from './imagesPageNotFound/page404-img.png';
 
 import * as S from './PageNotFound.styles';
+import { containerVariants } from '../../Constants/containerVariants';
 
 export function PageNotFound() {
   return (
     <>
       <S.ContainerPageNotFound
-        initial={{ width: '100%', opacity: 0 }}
-        animate={{ width: '100%', opacity: 1 }}
-        exit={{ x: window.innerWidth, opacity: 0 }}
-        transition={{ duration: 0.4, ease: 'backIn' }}
+        key="pageNotFound"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
       >
         <Area>
           <S.ContentPageNotFound>

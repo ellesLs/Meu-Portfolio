@@ -9,6 +9,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import images from './Images';
 
 import * as S from './Home.styles';
+import { containerVariants } from '../../Constants/containerVariants';
 
 export function Home() {
   const chosenImage = Math.floor(Math.random() * (images.length - 1));
@@ -16,10 +17,11 @@ export function Home() {
   return (
     <>
       <S.ContainerHome
-        initial={{ width: '100%', opacity: 0 }}
-        animate={{ width: '100%', opacity: 1 }}
-        exit={{ x: window.innerWidth, opacity: 0 }}
-        transition={{ duration: 0.4, ease: 'backIn' }}
+        key="home"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
       >
         <Area>
           <S.ContentHome>

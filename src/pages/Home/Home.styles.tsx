@@ -8,14 +8,6 @@ const showIntroduction = keyframes`
   }
 `;
 
-// const showImage = keyframes`
-//   from {
-//     opacity: 0;
-//   }
-// `;
-
-/* animation: ${showImage} 1.5s ease-in-out forwards; */
-
 const float = keyframes`
   0% {
     transform: translateX(0px);

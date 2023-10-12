@@ -17,14 +17,14 @@ export function CardImages({ desktop, mobile, alt, hasModal }: CardImagesProps) 
     <>
       <S.CardImgsContainer>
         <S.CardImg
-          src={`/src/images/projectsImgs/${desktop}.png`}
+          src={`src/assets/images/projectsImgs/${desktop}.png`}
           alt={`${alt} image desktop`}
           onClick={() => setIsOpenModalDesketop(true)}
           hasModal={hasModal}
         />
         {mobile && (
           <S.CardImg
-            src={`/src/images/projectsImgs/${mobile}.png`}
+            src={`/src/assets/images/projectsImgs/${mobile}.png`}
             alt={`${alt} image mobile`}
             onClick={() => setIsOpenModalMobile(true)}
             hasModal={hasModal}
