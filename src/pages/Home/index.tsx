@@ -6,7 +6,7 @@ import { TooltipWithClipBoard } from '../../components/TooltipWithClipBoard';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
-import { containerVariants } from '../../Constants/containerVariants';
+import { containerVariants } from '../../constants/containerVariants';
 import images from './Images';
 
 import * as S from './Home.styles';

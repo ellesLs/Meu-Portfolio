@@ -5,7 +5,7 @@ import { GenericIcon } from '../../components/GenericIcon';
 import { SocialIcons } from '../../components/SocialIcons';
 import { AboutListIcons } from './components/AboutListIcons';
 
-import { containerVariants } from '../../Constants/containerVariants';
+import { containerVariants } from '../../constants/containerVariants';
 import otter from './otter.png';
 
 import * as S from './About.styles';

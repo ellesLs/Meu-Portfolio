@@ -1,7 +1,7 @@
 import { Area } from '../../components/Area';
 import { ProjectsCards } from './components/ProjectsCards';
 
-import { containerVariants } from '../../Constants/containerVariants';
+import { containerVariants } from '../../constants/containerVariants';
 
 import * as S from './Projects.styles';
 
