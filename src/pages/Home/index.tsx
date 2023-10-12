@@ -6,10 +6,10 @@ import { TooltipWithClipBoard } from '../../components/TooltipWithClipBoard';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
+import { containerVariants } from '../../Constants/containerVariants';
 import images from './Images';
 
 import * as S from './Home.styles';
-import { containerVariants } from '../../Constants/containerVariants';
 
 export function Home() {
   const chosenImage = Math.floor(Math.random() * (images.length - 1));

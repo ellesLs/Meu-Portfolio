@@ -3,8 +3,8 @@ import { Area } from '../../components/Area';
 
 import ImgPage404 from './imagesPageNotFound/page404-img.png';
 
-import * as S from './PageNotFound.styles';
 import { containerVariants } from '../../Constants/containerVariants';
+import * as S from './PageNotFound.styles';
 
 export function PageNotFound() {
   return (
