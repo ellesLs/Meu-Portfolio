@@ -17,7 +17,7 @@ export function CardImages({ desktop, mobile, alt, hasModal }: CardImagesProps) 
     <>
       <S.CardImgsContainer>
         <S.CardImg
-          src={`src/assets/images/projectsImgs/${desktop}.png`}
+          src={`/src/assets/images/projectsImgs/${desktop}.png`}
           alt={`${alt} image desktop`}
           onClick={() => setIsOpenModalDesketop(true)}
           hasModal={hasModal}
