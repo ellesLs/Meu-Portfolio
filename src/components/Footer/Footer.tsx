@@ -1,4 +1,4 @@
-import { Area } from '../Area';
+import { Area } from '../Area/Area';
 
 import * as S from './Footer.styles';
 
