@@ -2,7 +2,14 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const ContainerProjects = styled(motion.section)`
+  flex: 1;
+
   width: 100%;
+  height: 100%;
+
+  display: grid;
+  align-items: center;
+
   margin-block: 2rem;
 
   h2 {
@@ -14,7 +21,7 @@ export const ContainerProjects = styled(motion.section)`
 
 export const ContentProjects = styled.div`
   width: 100%;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   /* background-color: ${({ theme }) => theme.colors.common.lightGray}; */
   background-color: transparent;
   border-radius: ${({ theme }) => theme.borderRadius};

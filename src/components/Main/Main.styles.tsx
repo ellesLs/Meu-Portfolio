@@ -7,11 +7,15 @@ const is_moving = keyframes`
 `;
 
 export const ContainerMain = styled.main`
+  flex: 1;
   width: 100%;
-  min-height: 91dvh;
+  /* min-height: 91dvh; */
   overflow-x: hidden;
 
   position: relative;
+
+  display: flex;
+  flex-direction: column;
 
   &::after {
     animation: ${is_moving} 30s ease-in-out infinite alternate;
@@ -36,13 +40,13 @@ export const ContainerMain = styled.main`
     background-position: 0 0, 1.8rem 1.8rem;
   }
 
-  @media screen and (min-height: 1024px) {
+  /* @media screen and (min-height: 1024px) {
     min-height: 94dvh;
   }
 
   @media screen and (min-width: 1440px) {
     min-height: 100dvh;
-  }
+  } */
 
   @media screen and (max-width: 768px) {
     &::after {

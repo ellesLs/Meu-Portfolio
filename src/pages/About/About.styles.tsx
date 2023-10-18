@@ -2,12 +2,18 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const ContainerAbout = styled(motion.section)`
+  flex: 1;
+
   width: 100%;
+  height: 100%;
+
+  display: grid;
+  align-items: center;
 `;
 
 export const ContentAbout = styled.div`
   width: 100%;
-  min-height: 90vh;
+  /* min-height: 90vh; */
 
   display: flex;
   flex-direction: column;

@@ -16,7 +16,7 @@ export function RootLayout() {
   const { isVisible: isWrapVisible } = useObserver(refBtnWrap);
 
   return (
-    <>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
       <Main>
         <Outlet />
@@ -25,6 +25,6 @@ export function RootLayout() {
         <ScrollToTopButton isVisible={isWrapVisible} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

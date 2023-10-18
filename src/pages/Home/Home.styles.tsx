@@ -22,8 +22,13 @@ const float = keyframes`
 `;
 
 export const ContainerHome = styled(motion.section)`
+  flex: 1;
+
   width: 100%;
-  margin-top: 0.8rem;
+  height: 100%;
+
+  display: grid;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     margin-top: 1.5rem;
@@ -38,7 +43,7 @@ export const ContentHome = styled.div`
   --sizeInnerContent: 370px;
 
   width: 100%;
-  min-height: 90vh;
+  /* min-height: 90vh; */
 
   display: flex;
   align-items: center;
