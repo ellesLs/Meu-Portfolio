@@ -52,6 +52,10 @@ export const ContentHome = styled.div`
     flex-direction: column;
     gap: 1rem;
   }
+
+  @media screen and (max-width: 520px) {
+    --sizeInnerContent: 100%;
+  }
 `;
 
 export const InfoHome = styled.div`

@@ -18,5 +18,6 @@ export const ContentFooter = styled.div`
 
   p {
     font-size: 1.7rem;
+    text-align: center;
   }
 `;

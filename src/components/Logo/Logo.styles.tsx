@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const ContainerLogo = styled.div`
   min-height: 30px;
   cursor: pointer;
+
+  @media screen and (max-width: 425px) {
+    padding-inline: 1rem;
+  }
 `;
 
 export const LogoSpan = styled.span`

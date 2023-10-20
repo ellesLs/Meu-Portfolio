@@ -20,5 +20,5 @@ export const ContentHeader = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  position: relative;
+  /* position: relative; */
 `;

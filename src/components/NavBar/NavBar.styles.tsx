@@ -31,14 +31,13 @@ export const ContainerNavBar = styled.nav`
     z-index: 996;
 
     position: absolute;
-    right: -1.5rem;
+    right: 0;
 
     width: 55%;
   }
 
   @media screen and (max-width: 425px) {
     width: 100vw;
-    right: -0.5rem;
     border-radius: 0;
   }
 `;
