@@ -39,4 +39,8 @@ export const CardDescription = styled.div`
     border-radius: 15px;
     border: 1px solid ${({ theme }) => theme.colors.secondary};
   }
+
+  ::-webkit-scrollbar-button:vertical {
+    display: none;
+  }
 `;
