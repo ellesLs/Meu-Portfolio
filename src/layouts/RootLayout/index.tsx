@@ -8,7 +8,6 @@ import { Main } from '../../components/Main';
 import { ScrollToTopButton } from '../../components/ScrollToTopButton';
 
 import { useObserver } from '../../Hooks/useObserver';
-// import { AnimatePresence } from 'framer-motion';
 
 export function RootLayout() {
   const refBtnWrap = useRef<HTMLDivElement>(null);
