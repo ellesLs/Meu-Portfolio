@@ -26,6 +26,7 @@ export const ContainerNavBar = styled.nav`
     background-color: ${({ theme }) => theme.colors.common.white};
 
     border-bottom-left-radius: ${({ theme }) => theme.borderRadius};
+    border-bottom-right-radius: ${({ theme }) => theme.borderRadius};
     border-top: 1px solid #00000035;
     box-shadow: -3px 3px 5px #00000035;
     z-index: 996;
@@ -33,11 +34,11 @@ export const ContainerNavBar = styled.nav`
     position: absolute;
     right: 0;
 
-    width: 55%;
+    width: 100%;
   }
 
   @media screen and (max-width: 425px) {
-    width: 100vw;
+    /* width: 100vw; */
     border-radius: 0;
   }
 `;
