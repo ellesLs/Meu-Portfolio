@@ -11,9 +11,10 @@ import { AnimatePresence } from 'framer-motion';
 
 export function AppRoutes() {
   const location = useLocation();
+  // const local = location.pathname === '/' ? '/home' : location.pathname.substring(1);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
