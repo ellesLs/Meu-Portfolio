@@ -14,7 +14,7 @@ export function AppRoutes() {
   // const local = location.pathname === '/' ? '/home' : location.pathname.substring(1);
 
   return (
-    <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+    <AnimatePresence initial={false} mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />

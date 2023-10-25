@@ -9,19 +9,10 @@ import { containerVariants } from '../../constants/containerVariants';
 import otter from './otter.png';
 
 import * as S from './About.styles';
-import { useLocation } from 'react-router-dom';
 
 export function About() {
-  const location = useLocation();
-
   return (
-    <S.ContainerAbout
-      key={location.pathname}
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
+    <S.ContainerAbout variants={containerVariants} initial="hidden" animate="visible" exit="exit">
       <Area>
         <S.ContentAbout>
           <S.ContainerInfoAbout>

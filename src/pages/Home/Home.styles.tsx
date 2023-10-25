@@ -8,6 +8,12 @@ const showIntroduction = keyframes`
   }
 `;
 
+const showIntroductionLinks = keyframes`
+  from {
+    opacity: 0;
+  }
+`;
+
 const float = keyframes`
   0% {
     transform: translateX(0px);
@@ -87,14 +93,14 @@ export const InfoHome = styled.div`
     letter-spacing: -0.2rem;
     color: ${({ theme }) => theme.colors.common.black};
     font-size: clamp(3.5rem, 1vw + 2.5rem, 4.5rem);
-    animation: ${showIntroduction} 1.8s forwards;
+    animation: ${showIntroduction} 0.5s forwards;
   }
 
   p {
     letter-spacing: -0.1rem;
     font-size: 3rem;
     margin-block: 1.5rem;
-    animation: ${showIntroduction} 2s forwards;
+    animation: ${showIntroduction} 0.8s forwards;
   }
 
   strong {
@@ -129,7 +135,7 @@ export const ContainerLinks = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  animation: ${showIntroduction} 2.2s forwards;
+  animation: ${showIntroductionLinks} 1s forwards;
 
   @media screen and (max-width: 520px) {
     flex-direction: column-reverse;

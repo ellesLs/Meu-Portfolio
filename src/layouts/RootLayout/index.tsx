@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
@@ -14,11 +14,13 @@ export function RootLayout() {
 
   const { isVisible: isWrapVisible } = useObserver(refBtnWrap);
 
+  const location = useLocation();
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
       <Main>
-        <Outlet />
+        <Outlet key={location.pathname} />
       </Main>
       <div className="scrollBtn-wrap" ref={refBtnWrap}>
         <ScrollToTopButton isVisible={isWrapVisible} />

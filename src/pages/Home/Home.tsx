@@ -11,20 +11,11 @@ import images from './Images';
 
 import * as S from './Home.styles';
 
-import { useLocation } from 'react-router-dom';
-
 export function Home() {
   const selectedImage = Math.floor(Math.random() * (images.length - 1));
-  const location = useLocation();
 
   return (
-    <S.ContainerHome
-      key={location.pathname}
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
+    <S.ContainerHome variants={containerVariants} initial="hidden" animate="visible" exit="exit">
       <Area>
         <S.ContentHome>
           <S.InfoHome>
