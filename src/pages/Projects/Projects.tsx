@@ -1,4 +1,4 @@
-import { Wrapper } from '../../components/Area';
+import { Wrapper } from '../../components/Wrapper';
 import { ProjectsCards } from './components/ProjectsCards';
 
 import { containerVariants } from '../../constants/variants';

@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-import { Wrapper } from '../../components/Area';
+import { Wrapper } from '../../components/Wrapper';
 import { GenericIcon } from '../../components/GenericIcon';
 import { SocialIcons } from '../../components/SocialIcons';
 import { AboutListIcons } from './components/AboutListIcons';

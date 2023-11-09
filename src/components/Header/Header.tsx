@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Wrapper } from '../Area';
+import { Wrapper } from '../Wrapper';
 import { Logo } from '../Logo';
 import { NavBar } from '../NavBar';
 import { MenuMobile } from '../MenuMobile';

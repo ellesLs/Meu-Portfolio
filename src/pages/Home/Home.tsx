@@ -1,4 +1,4 @@
-import { Wrapper } from '../../components/Area';
+import { Wrapper } from '../../components/Wrapper';
 import { ButtonLink } from '../../components/ButtonLink';
 import { SocialIcons } from '../../components/SocialIcons';
 import { GenericIcon } from '../../components/GenericIcon';

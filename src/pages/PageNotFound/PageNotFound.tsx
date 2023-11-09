@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Wrapper } from '../../components/Area';
+import { Wrapper } from '../../components/Wrapper';
 
 import ImgPage404 from './imagesPageNotFound/page404-img.png';
 

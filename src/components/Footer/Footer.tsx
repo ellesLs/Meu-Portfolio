@@ -1,4 +1,4 @@
-import { Wrapper } from '../Area/Wrapper';
+import { Wrapper } from '../Wrapper/Wrapper';
 
 import * as S from './Footer.styles';
 
