@@ -1,4 +1,4 @@
-import { Area } from '../../components/Area';
+import { Wrapper } from '../../components/Area';
 import { ProjectsCards } from './components/ProjectsCards';
 
 import { containerVariants } from '../../constants/variants';
@@ -13,12 +13,12 @@ export function Projects() {
       animate="visible"
       exit="exit"
     >
-      <Area>
+      <Wrapper>
         <S.ContentProjects>
           <h2>Projetos</h2>
           <ProjectsCards />
         </S.ContentProjects>
-      </Area>
+      </Wrapper>
     </S.ContainerProjects>
   );
 }

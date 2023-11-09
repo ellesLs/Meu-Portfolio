@@ -1,4 +1,4 @@
-import { Area } from '../../components/Area';
+import { Wrapper } from '../../components/Area';
 import { ButtonLink } from '../../components/ButtonLink';
 import { SocialIcons } from '../../components/SocialIcons';
 import { GenericIcon } from '../../components/GenericIcon';
@@ -16,7 +16,7 @@ export function Home() {
 
   return (
     <S.ContainerHome variants={containerVariants} initial="hidden" animate="visible" exit="exit">
-      <Area>
+      <Wrapper>
         <S.ContentHome>
           <S.InfoHome>
             <h1>
@@ -45,7 +45,7 @@ export function Home() {
             <img src={images[selectedImage]} alt="Banner Image" title="banner" />
           </S.FigureHome>
         </S.ContentHome>
-      </Area>
+      </Wrapper>
     </S.ContainerHome>
   );
 }

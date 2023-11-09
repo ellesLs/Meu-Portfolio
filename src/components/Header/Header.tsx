@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Area } from '../Area';
+import { Wrapper } from '../Area';
 import { Logo } from '../Logo';
 import { NavBar } from '../NavBar';
 import { MenuMobile } from '../MenuMobile';
@@ -16,13 +16,13 @@ export function Header() {
 
   return (
     <S.ContainerHeader>
-      <Area>
+      <Wrapper>
         <S.ContentHeader>
           <Logo />
           <MenuMobile onToggleMenu={handleToogleMenu} isOpenMenu={isOpenMenu} />
           <NavBar isOpenMenu={isOpenMenu} onToggleMenu={handleToogleMenu} />
         </S.ContentHeader>
-      </Area>
+      </Wrapper>
     </S.ContainerHeader>
   );
 }

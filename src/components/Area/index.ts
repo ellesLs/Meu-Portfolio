@@ -1,1 +1,1 @@
-export { Area } from './Area';
+export { Wrapper } from './Wrapper';

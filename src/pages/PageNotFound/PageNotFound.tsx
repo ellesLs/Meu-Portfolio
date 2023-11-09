@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Area } from '../../components/Area';
+import { Wrapper } from '../../components/Area';
 
 import ImgPage404 from './imagesPageNotFound/page404-img.png';
 
@@ -16,7 +16,7 @@ export function PageNotFound() {
         animate="visible"
         exit="exit"
       >
-        <Area>
+        <Wrapper>
           <S.ContentPageNotFound>
             <img src={ImgPage404} alt="page not found" />
             <p>Pagina não encontrada!</p>
@@ -29,7 +29,7 @@ export function PageNotFound() {
               Image designed by stories / Freepik
             </a>
           </S.ContainerDesigned>
-        </Area>
+        </Wrapper>
       </S.ContainerPageNotFound>
     </>
   );

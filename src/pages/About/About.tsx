@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-import { Area } from '../../components/Area';
+import { Wrapper } from '../../components/Area';
 import { GenericIcon } from '../../components/GenericIcon';
 import { SocialIcons } from '../../components/SocialIcons';
 import { AboutListIcons } from './components/AboutListIcons';
@@ -13,7 +13,7 @@ import * as S from './About.styles';
 export function About() {
   return (
     <S.ContainerAbout variants={containerVariants} initial="hidden" animate="visible" exit="exit">
-      <Area>
+      <Wrapper>
         <S.ContentAbout>
           <S.ContainerInfoAbout>
             <S.FigureAbout>
@@ -41,7 +41,7 @@ export function About() {
           </S.ContainerMediaSocial>
           <AboutListIcons />
         </S.ContentAbout>
-      </Area>
+      </Wrapper>
     </S.ContainerAbout>
   );
 }

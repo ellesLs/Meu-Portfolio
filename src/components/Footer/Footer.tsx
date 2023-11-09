@@ -1,17 +1,17 @@
-import { Area } from '../Area/Area';
+import { Wrapper } from '../Area/Wrapper';
 
 import * as S from './Footer.styles';
 
 export function Footer() {
   return (
     <S.ContainerFooter>
-      <Area>
+      <Wrapper>
         <S.ContentFooter>
           <p>
             Desenvolvido por <strong>Elles</strong> © <i>{new Date().getFullYear()}</i>
           </p>
         </S.ContentFooter>
-      </Area>
+      </Wrapper>
     </S.ContainerFooter>
   );
 }
