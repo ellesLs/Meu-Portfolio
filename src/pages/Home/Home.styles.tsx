@@ -153,6 +153,7 @@ export const FigureHome = styled.figure`
 
   img {
     width: min(700px, 110%);
+    max-width: 110%;
     object-fit: cover;
 
     animation: ${float} 5s infinite ease-in-out 2s;

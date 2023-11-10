@@ -28,6 +28,16 @@ export const GlobalStyles = createGlobalStyle`
         outline-offset: 0.5rem;
         outline-color: ${({ theme }) => theme.colors.common.black};
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        font-style: italic;
+        background-repeat: no-repeat;
+        background-size: cover;
+        shape-margin: 0.75ch;
+    }
  
     button {
         cursor: pointer;
