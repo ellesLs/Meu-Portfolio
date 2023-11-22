@@ -1,48 +1,48 @@
 import { useState } from 'react';
 import { Modal } from '../../../../../components/Modal';
 import * as S from './CardImages.styles';
+import { useProjectContext } from '../../../../../hooks/useProjectContext';
 
-type CardImagesProps = {
-  desktop: string;
-  mobile?: string;
-  alt: string;
-  hasModal?: boolean;
-};
-
-export function CardImages({ desktop, mobile, alt, hasModal }: CardImagesProps) {
+export function CardImages() {
   const [isOpenModalDesktop, setIsOpenModalDesketop] = useState(false);
   const [isOpenModalMobile, setIsOpenModalMobile] = useState(false);
 
   const handleClickOpenModalDesktop = () => setIsOpenModalDesketop(!isOpenModalDesktop);
   const handleClickOpenModalMobile = () => setIsOpenModalMobile(!isOpenModalMobile);
 
+  const { project } = useProjectContext();
+
   return (
     <>
       <S.CardImgsContainer>
         <S.CardImg
-          src={`/src/assets/images/projectsImgs/${desktop}.png`}
-          alt={`${alt} desktop image`}
+          src={`/src/assets/images/projectsImgs/${project.images.desktopImg}.png`}
+          alt={`${project} desktop image`}
           onClick={handleClickOpenModalDesktop}
-          hasModal={hasModal}
+          hasModal={project.modal}
         />
-        {mobile && (
+        {project.images.mobileImg && (
           <S.CardImg
-            src={`/src/assets/images/projectsImgs/${mobile}.png`}
-            alt={`${alt} mobile image`}
+            src={`/src/assets/images/projectsImgs/${project.images.mobileImg}.png`}
+            alt={`${project.title} mobile image`}
             onClick={handleClickOpenModalMobile}
-            hasModal={hasModal}
+            hasModal={project.modal}
           />
         )}
       </S.CardImgsContainer>
 
-      {hasModal && (
+      {project.modal && (
         <>
           <Modal
-            image={desktop}
+            image={project.images.desktopImg}
             isOpen={isOpenModalDesktop}
             setIsOpen={handleClickOpenModalDesktop}
           />
-          <Modal image={mobile} isOpen={isOpenModalMobile} setIsOpen={handleClickOpenModalMobile} />
+          <Modal
+            image={project.images.mobileImg}
+            isOpen={isOpenModalMobile}
+            setIsOpen={handleClickOpenModalMobile}
+          />
         </>
       )}
     </>

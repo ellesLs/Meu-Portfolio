@@ -1,9 +1,18 @@
+import { ProjectContextProvider } from '../../../../../contexts/ContextProjects';
+import { ProjectProps } from '../../../projects.types';
 import * as S from './CardRoot.styles';
 
 type ProjectsCardProps = {
   children?: React.ReactNode;
+  project: ProjectProps;
 };
 
-export function CardRoot({ children }: ProjectsCardProps) {
-  return <S.CardContainer>{children}</S.CardContainer>;
+export function CardRoot({ children, project }: ProjectsCardProps) {
+  return (
+    <>
+      <ProjectContextProvider project={project}>
+        <S.CardContainer>{children}</S.CardContainer>
+      </ProjectContextProvider>
+    </>
+  );
 }

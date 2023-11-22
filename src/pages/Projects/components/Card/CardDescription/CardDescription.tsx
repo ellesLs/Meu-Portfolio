@@ -1,13 +1,16 @@
+import { useProjectContext } from '../../../../../hooks/useProjectContext';
 import * as S from './CardDescription.styles';
 
-type CardDescriptionProps = {
-  description: string;
-};
+// type CardDescriptionProps = {
+//   description: string;
+// };
 
-export function CardDescription({ description }: CardDescriptionProps) {
+export function CardDescription() {
+  const { project } = useProjectContext();
+
   return (
     <S.CardDescription>
-      <p>{description}</p>
+      <p>{project.description}</p>
     </S.CardDescription>
   );
 }

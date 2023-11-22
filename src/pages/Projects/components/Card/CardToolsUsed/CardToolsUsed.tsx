@@ -1,13 +1,16 @@
+import { useProjectContext } from '../../../../../hooks/useProjectContext';
 import * as S from './CardToolsUsed.styles';
 
-type CardToolsUsedProps = {
-  tools?: string[];
-};
+// type CardToolsUsedProps = {
+//   tools?: string[];
+// };
 
-export function CardToolsUsed({ tools }: CardToolsUsedProps) {
+export function CardToolsUsed() {
+  const { project } = useProjectContext();
+
   return (
     <S.CardToolsContainer>
-      {tools?.map((tool) => (
+      {project.toolsUsed?.map((tool) => (
         <span key={tool}>{tool}</span>
       ))}
     </S.CardToolsContainer>
