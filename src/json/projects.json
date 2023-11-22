@@ -36,5 +36,18 @@
         "liveUrl": "https://www.google.com",
         "gitHubUrl": "https://github.com/ellesLs",
         "modal": true
+    },
+    {
+        "id": "999p",
+        "title": "Novo Projeto",
+        "images": {
+            "desktopImg": "branding-desktop",
+            "mobileImg": ""
+        },
+        "description": "Um novo Projeto em Desenvolvimento!!!",
+        "toolsUsed": [],
+        "liveUrl": "",
+        "gitHubUrl": "",
+        "modal": false
     }
 ]
