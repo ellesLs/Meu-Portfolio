@@ -3,10 +3,10 @@ import * as S from './GenericIcon.styles';
 type GenericIconProps = {
   icon: React.ReactNode;
   url?: string;
-  handleFunc?: () => void;
+  onClick?: () => void;
 };
 
-export function GenericIcon({ icon, url, handleFunc }: GenericIconProps) {
+export function GenericIcon({ icon, url, onClick }: GenericIconProps) {
   if (url)
     return (
       <S.ContainerIcon href={url} target="_blank" rel="noopener noreferrer">
@@ -14,5 +14,5 @@ export function GenericIcon({ icon, url, handleFunc }: GenericIconProps) {
       </S.ContainerIcon>
     );
 
-  return <S.ContainerIcon onClick={handleFunc}>{icon}</S.ContainerIcon>;
+  return <S.ContainerIcon onClick={onClick}>{icon}</S.ContainerIcon>;
 }
