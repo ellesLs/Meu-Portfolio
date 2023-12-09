@@ -3,8 +3,8 @@
         "id": "1p",
         "title": "Meu Portfólio",
         "images": {
-            "desktopImg": "branding-desktop",
-            "mobileImg": "branding-mobile"
+            "desktopImg": "meu-portfolio-desktop",
+            "mobileImg": "meu-portfolio-mobile"
         },
         "description": "Projeto do meu portfolio pessoal feito em React com TypeScript e usando Styled-Components para a estilização",
         "toolsUsed": [
@@ -25,7 +25,7 @@
             "desktopImg": "branding-desktop",
             "mobileImg": "branding-mobile"
         },
-        "description": "Um site sobre Branding e marketing digital",
+        "description": "Um site sobre Branding e marketing digital que foi um dos projetos finais do curso que fiz na Devmedia.",
         "toolsUsed": [
             "HTML",
             "CSS",
@@ -41,7 +41,7 @@
         "id": "999p",
         "title": "Novo Projeto",
         "images": {
-            "desktopImg": "branding-desktop",
+            "desktopImg": "new-project",
             "mobileImg": ""
         },
         "description": "Um novo Projeto em Desenvolvimento!!!",

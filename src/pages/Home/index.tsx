@@ -26,7 +26,7 @@ export function Home() {
               Desenvolvedor <span>Front-End</span>
             </p>
             <S.ContainerLinks>
-              <ButtonLink download={false} url="/Curriculo- Elles2.pdf">
+              <ButtonLink download={false} url="/Curriculo-Elles.pdf">
                 Download CV
               </ButtonLink>
               <SocialIcons>

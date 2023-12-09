@@ -5,7 +5,9 @@ export const CardDescription = styled.div`
   margin-block: 2rem 1rem;
   max-height: 8rem;
   overflow-y: auto;
-  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 
   p {
     /* font-size: 1.7rem; */

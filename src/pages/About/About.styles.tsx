@@ -16,8 +16,10 @@ export const ContentAbout = styled.div`
   /* min-height: 90vh; */
 
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
 
   justify-content: space-evenly;
 
@@ -46,12 +48,13 @@ export const FigureAbout = styled.figure`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: gray;
+  object-fit: cover;
+  /* background-color: gray; */
 
   img {
-    max-width: 250px;
-    min-height: 350px;
-    object-fit: cover;
+    max-width: 300px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #00000050;
   }
 `;
 
@@ -64,6 +67,7 @@ export const InfoAbout = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding-inline: 2rem;
+  margin-top: 1rem;
 
   h2 {
     text-align: center;
@@ -79,6 +83,7 @@ export const InfoAbout = styled.div`
   p {
     max-width: 90rem;
     text-align: left;
+    line-height: 2.3rem;
     /* text-wrap: balance; */
     color: ${({ theme }) => theme.colors.common.darkGray};
   }

@@ -6,7 +6,7 @@ import { SocialIcons } from '../../components/SocialIcons';
 import { AboutListIcons } from './components/AboutListIcons';
 
 import { containerVariants } from '../../constants/variants';
-import otter from './otter.png';
+import perfil from './perfil.png';
 
 import * as S from './About.styles';
 
@@ -15,17 +15,23 @@ export function About() {
     <S.ContainerAbout variants={containerVariants} initial="hidden" animate="visible" exit="exit">
       <Wrapper>
         <S.ContentAbout>
+          <h2>Sobre mim</h2>
           <S.ContainerInfoAbout>
             <S.FigureAbout>
-              <img src={otter} alt="" />
+              <img src={perfil} alt="Minha Imagem de Perfil" />
             </S.FigureAbout>
             <S.InfoAbout>
-              <h2>Sobre mim</h2>
               <p>
-                Meu nome é <span>Elles do Nascimento Santana Desenvolvedor Front-End</span> Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Nam iste nobis hic explicabo
-                soluta debitis accusamus ad repellat corrupti voluptatem tempore, accusantium
-                labore!
+                Ola, meu nome é <span>Elles do Nascimento Santana</span>, sempre gostei muito da
+                área de TI, gosto de consumir artigos, blogs, documentações e vídeos sobre
+                programação. Sou formado em Tecnólogo em Analise e desenvolvimento de Sistemas por
+                EAD pela Uninter, tenho um curso de técnico de TI pelo Pronatec e já passei um bom
+                tempo estudando programação pela plataforma da Devmedia. Em busca de trabalhar na
+                área de TI a alguns anos principalmente como desenvolvedor web Front-end, estudo
+                programação a algum tempo, focado nisso desde meados de 2022 e já tenho
+                conhecimentos em HTML, CSS, JavaScript, React com foco futuro em dominar um
+                Framework e conseguir me tornar um desenvolvedor melhor que consegue resolver os
+                problemas que vierem a aparecer com as melhores praticas possiveis.
               </p>
             </S.InfoAbout>
           </S.ContainerInfoAbout>
