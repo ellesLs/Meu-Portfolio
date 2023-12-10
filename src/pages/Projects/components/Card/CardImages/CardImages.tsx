@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal } from '../../../../../components/Modal';
 import * as S from './CardImages.styles';
-import { useProjectContext } from '../../../../../Hooks/useProjectContext';
+import { useProjectContext } from '../../../../../hooks/useProjectContext';
 
 export function CardImages() {
   const [isOpenModalDesktop, setIsOpenModalDesketop] = useState(false);
