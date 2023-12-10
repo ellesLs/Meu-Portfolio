@@ -1,4 +1,4 @@
-import { useProjectContext } from '../../../../../hooks/useProjectContext';
+import { useProjectContext } from '../../../../../Hooks/useProjectContext';
 import * as S from './CardTitle.styles';
 
 // type CardTitleProps = {
