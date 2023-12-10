@@ -16,14 +16,14 @@ export function CardImages() {
     <>
       <S.CardImgsContainer>
         <S.CardImg
-          src={`/src/assets/images/projectsImgs/${project.images.desktopImg}.png`}
+          src={`/assets/images/projectsImgs/${project.images.desktopImg}.png`}
           alt={`${project} desktop image`}
           onClick={handleClickOpenModalDesktop}
           hasModal={project.modal}
         />
         {project.images.mobileImg && (
           <S.CardImg
-            src={`/src/assets/images/projectsImgs/${project.images.mobileImg}.png`}
+            src={`/assets/images/projectsImgs/${project.images.mobileImg}.png`}
             alt={`${project.title} mobile image`}
             onClick={handleClickOpenModalMobile}
             hasModal={project.modal}

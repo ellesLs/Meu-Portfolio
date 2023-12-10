@@ -11,7 +11,7 @@ export function Modal({ image, isOpen, setIsOpen }: ModalProps) {
     return (
       <S.ContainerModal onClick={setIsOpen}>
         <S.ContentModal>
-          <img src={`/src/assets/images/projectsImgs/${image}.png`} alt="img Modal" />
+          <img src={`/assets/images/projectsImgs/${image}.png`} alt="img Modal" />
         </S.ContentModal>
       </S.ContainerModal>
     );
