@@ -3,6 +3,4 @@
 
 🚀 Usage
 
-just donwload
-
 * Use npm install
