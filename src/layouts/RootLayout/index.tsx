@@ -7,7 +7,7 @@ import { Header } from '../../components/Header';
 import { Main } from '../../components/Main';
 import { ScrollToTopButton } from '../../components/ScrollToTopButton';
 
-import { useObserver } from '../../hooks/useObserver';
+import { useObserver } from '../../Hooks/useObserver';
 
 export function RootLayout() {
   const refBtnWrap = useRef<HTMLDivElement>(null);
