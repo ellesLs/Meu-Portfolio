@@ -15,7 +15,7 @@
             "Styled-Components"
         ],
         "liveUrl": "",
-        "gitHubUrl": "https://github.com/ellesLs",
+        "gitHubUrl": "https://github.com/ellesLs/Meu-Portfolio",
         "modal": true
     },
     {
@@ -33,8 +33,8 @@
             "typescript",
             "Styled-Components"
         ],
-        "liveUrl": "https://www.google.com",
-        "gitHubUrl": "https://github.com/ellesLs",
+        "liveUrl": "https://brandingelles.vercel.app",
+        "gitHubUrl": "https://github.com/ellesLs/Agencia-de-Branding",
         "modal": true
     },
     {
