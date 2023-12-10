@@ -5,4 +5,4 @@
 
 just donwload
 
-* use npm install
+* Use npm install
