@@ -3,4 +3,4 @@
 
 🚀 Usage
 
-* Use npm install
+* use npm install
