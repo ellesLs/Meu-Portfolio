@@ -5,7 +5,7 @@
 
 Download files or clone clone this repository
 
-To run this project, install it locally using npm or yarn:
+To run this project, install it locally using npm or yarn or pnpm:
 
-1. pnpm install, npm install or yarn;
-2. pnpm dev, npm run dev or yarn dev;
+1. npm install, yarn or pnpm install;
+2. npm run dev, yarn dev or pnpm dev;
