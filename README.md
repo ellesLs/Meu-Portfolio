@@ -5,5 +5,6 @@
 
 To run this project, install it locally using npm:
 
+* download repo
 * npm install
 * npm run dev
