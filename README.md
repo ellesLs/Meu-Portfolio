@@ -1,7 +1,7 @@
 # Meu Portfolio
 
 
-<img src="./assets/images/projectsImgs/meu-portfolio-desktop.png"/>
+<img src="./public/assets/images/projectsImgs/meu-portfolio-desktop.png"/>
 <h2>My personal website 
 
 <h3>🛠 Tools</h3>
