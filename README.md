@@ -1,8 +1,12 @@
 # Meu Portfolio
 
-<h2>My personal website developed using <a href="https://react.dev/" target="blank">React</a> with <a href="https://www.typescriptlang.org/" target="blank">TypeScript</a> and <a href="https://styled-components.com/" target="blank">Styled-Components</a> to style.</h2>
+<h2>My personal website 
 
+<h3>🛠 Tools</h3>
 
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled-Components](https://styled-components.com/)
 
 <h3>🚀 Getting Started</h3>
 
