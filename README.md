@@ -3,8 +3,9 @@
 
 <h3>🚀 Getting Started</h3>
 
-To run this project, install it locally using npm:
+Download files or clone clone this repository
 
-* download repository
-* npm install
-* npm run dev
+To run this project, install it locally using npm or yarn:
+
+1. pnpm install, npm install or yarn;
+2. pnpm dev, npm run dev or yarn dev;
