@@ -38,6 +38,7 @@ export const ContainerInfoAbout = styled.section`
 
   @media screen and (max-width: 650px) {
     flex-direction: column;
+    margin-top: 0;
   }
 `;
 
@@ -48,13 +49,14 @@ export const FigureAbout = styled.figure`
   display: flex;
   align-items: center;
   justify-content: center;
-  object-fit: cover;
+
   /* background-color: gray; */
 
   img {
-    max-width: 300px;
+    width: 300px;
     border-radius: 25px;
     box-shadow: 3px 3px 3px #00000050;
+    object-fit: cover;
   }
 `;
 

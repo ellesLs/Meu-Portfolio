@@ -22,16 +22,19 @@ export function About() {
             </S.FigureAbout>
             <S.InfoAbout>
               <p>
-                Ola, meu nome é <span>Elles do Nascimento Santana</span>, sempre gostei muito da
-                área de TI, gosto de consumir artigos, blogs, documentações e vídeos sobre
-                programação. Sou formado em Tecnólogo em Analise e desenvolvimento de Sistemas por
-                EAD pela Uninter, tenho um curso de técnico de TI pelo Pronatec e já passei um bom
-                tempo estudando programação pela plataforma da Devmedia. Em busca de trabalhar na
-                área de TI a alguns anos principalmente como desenvolvedor web Front-end, estudo
-                programação a algum tempo, focado nisso desde meados de 2022 e já tenho
-                conhecimentos em HTML, CSS, JavaScript, React com foco futuro em dominar um
-                Framework e conseguir me tornar um desenvolvedor melhor que consegue resolver os
-                problemas que vierem a aparecer com as melhores praticas possiveis.
+                Ola, meu nome é <span>Elles do Nascimento Santana</span>, sou formado em Tecnólogo
+                em Analise e desenvolvimento de Sistemas por EAD pela Uninter, tenho um curso de
+                técnico de TI pelo Pronatec e já passei um bom tempo estudando programação pela
+                plataforma da Devmedia. Sempre gostei muito da área de TI por isso gosto de consumir
+                artigos, blogs, documentações e vídeos sobre programação e suas tecnologias.
+              </p>
+              <p>
+                Estou em busca de trabalhar na área de TI a alguns anos principalmente como
+                desenvolvedor web Front-end, estudo programação a algum tempo, focado nisso desde
+                meados de 2022 e já tenho conhecimentos em HTML, CSS, JavaScript, React com foco
+                futuro em dominar um Framework e conseguir me tornar um desenvolvedor melhor que
+                consegue resolver os problemas que vierem a aparecer com as melhores praticas
+                possiveis.
               </p>
             </S.InfoAbout>
           </S.ContainerInfoAbout>
