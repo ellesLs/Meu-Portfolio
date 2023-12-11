@@ -1,7 +1,7 @@
 # Meu Portfolio
 
 <h2 align="center">My personal website</h2>
-<img alt="Image web portfolio" tittle="My personal Portfolio" src="./public/assets/images/portfolioelles.png"/>
+<img src="./public/assets/images/projectsImgs/meu-portfolio-desktop.png"/>
 
 <h3>🛠 Tools</h3>
 
