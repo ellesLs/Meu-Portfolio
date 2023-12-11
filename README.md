@@ -3,7 +3,7 @@
 
 <h3>🚀 Getting Started</h3>
 
-Download file or clone this repository and run this project following commands inside the project folder:
+Download or clone this repository and run this project following commands inside the project folder:
 
 1. <code>npm install</code>, <code>yarn</code> or <code>pnpm install</code>;
 2. <code>npm run dev</code>, <code>yarn dev</code> or  <code>pnpm dev</code>;
