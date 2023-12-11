@@ -3,7 +3,7 @@
 
 <h3>🚀 Getting Started</h3>
 
-Download files or clone clone this repository
+Download file or clone clone this repository
 
 To run this project, install it locally using npm or yarn or pnpm:
 
