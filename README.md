@@ -2,7 +2,7 @@
 
 <h2 align="center">My personal website</h2>
 <h3 align="center">
-    <img alt="Portfolio image" title="My Personal Portfolio" src="./public/assets/images/portfolioelles.png" width="500"/>
+    <img alt="Portfolio image" title="My Personal Portfolio" src="./public/assets/images/portfolioelles.png" width="650"/>
 </h3>
 
 <h3>🛠 Tools</h3>
