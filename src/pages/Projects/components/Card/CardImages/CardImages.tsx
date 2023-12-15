@@ -20,6 +20,7 @@ export function CardImages() {
           alt={`${project} desktop image`}
           onClick={handleClickOpenModalDesktop}
           hasModal={project.modal}
+          loading="eager"
         />
         {project.images.mobileImg && (
           <S.CardImg

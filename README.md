@@ -11,6 +11,7 @@
 
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [React-Query](https://tanstack.com/query/v3/docs/react/overview)
 - [Styled-Components](https://styled-components.com/)
 
 ## 🚀 Getting Started
