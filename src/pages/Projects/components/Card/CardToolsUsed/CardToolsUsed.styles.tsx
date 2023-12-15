@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
-export const CardToolsContainer = styled.div`
+export const CardToolsContainer = styled.section`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+export const CardToolsContent = styled.div`
   width: 100%;
 
   display: flex;

@@ -3,7 +3,7 @@ import { ButtonLink } from '../../../../components/ButtonLink';
 
 import * as S from './ProjectsCards.styles';
 
-import { Skeleton } from '../../../../components/Skeleton';
+import { SkeletonCard } from '../../../../components/SkeletonCard';
 import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 
 export function ProjectsCards() {
@@ -11,20 +11,15 @@ export function ProjectsCards() {
 
   return (
     <S.ContainerListCards>
-      {isLoading && [...Array(4).keys()].map((i) => <Skeleton key={i} />)}
+      {isLoading && [...Array(4).keys()].map((i) => <SkeletonCard key={i} />)}
       {!isLoading &&
         !error &&
         dataProjects?.map((project) => (
-          <Card.Root key={project.id} project={project}>
+          <Card.Root project={project} key={project.id}>
             <Card.Title />
             <Card.Images />
             <Card.Description />
-            {project.toolsUsed.length > 0 && (
-              <>
-                <h3>Tecnologias Usadas</h3>
-                <Card.Tools />
-              </>
-            )}
+            {project.toolsUsed.length > 0 && <Card.Tools />}
             <Card.Buttons>
               {project.liveUrl && <ButtonLink url={project.liveUrl}>Live</ButtonLink>}
               {project.gitHubUrl && <ButtonLink url={project.gitHubUrl}>GitHub</ButtonLink>}
