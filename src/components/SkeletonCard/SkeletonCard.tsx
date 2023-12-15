@@ -1,6 +1,6 @@
-import * as S from './Skeleton.styles';
+import * as S from './SkeletonCard.styles';
 
-export function Skeleton() {
+export function SkeletonCard() {
   return (
     <S.RootSkeleton>
       <S.TittleSkeleton />
