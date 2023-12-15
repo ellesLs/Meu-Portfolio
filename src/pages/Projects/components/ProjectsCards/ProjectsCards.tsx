@@ -1,10 +1,10 @@
 import { Card } from '../Card';
 import { ButtonLink } from '../../../../components/ButtonLink';
+import { SkeletonCard } from '../../../../components/SkeletonCard';
+
+import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 
 import * as S from './ProjectsCards.styles';
-
-import { SkeletonCard } from '../../../../components/SkeletonCard';
-import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 
 export function ProjectsCards() {
   const { dataProjects, isLoading, error } = useFetchProjects();
