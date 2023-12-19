@@ -2,12 +2,13 @@ import { Card } from '../Card';
 import { ButtonLink } from '../../../../components/ButtonLink';
 import { SkeletonCard } from '../../../../components/SkeletonCard';
 
+import { fetchProjects } from '../../../../services/fetchProjects';
 import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 
 import * as S from './ProjectsCards.styles';
 
 export function ProjectsCards() {
-  const { dataProjects, isLoading, error } = useFetchProjects();
+  const { dataProjects, isLoading, error } = useFetchProjects({ fetchProjects });
 
   return (
     <S.ContainerListCards>
