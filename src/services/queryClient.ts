@@ -1,6 +1,6 @@
 import { QueryClient } from '@tanstack/react-query';
 
-const TIME_IN_SECONDS_TO_REFETCH = 1000 * 60 * 30; // secunds
+const TIME_IN_SECONDS_TO_REFETCH = 1000 * 60; //60 secunds
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
