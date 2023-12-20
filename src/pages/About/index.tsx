@@ -6,7 +6,7 @@ import { SocialIcons } from '../../components/SocialIcons';
 import { AboutListIcons } from './components/AboutListIcons';
 
 import { containerVariants } from '../../constants/variants';
-import perfil from './perfil.png';
+import { images } from './images';
 
 import * as S from './About.styles';
 
@@ -18,7 +18,11 @@ export function About() {
           <h2>Sobre mim</h2>
           <S.ContainerInfoAbout>
             <S.FigureAbout>
-              <img src={perfil} alt="Minha Imagem de Perfil" />
+              <img
+                alt="Minha Imagem de Perfil"
+                src={images.large}
+                srcSet={`${images.small} 375w, ${images.medium} 768w, `}
+              />
             </S.FigureAbout>
             <S.InfoAbout>
               <p>
