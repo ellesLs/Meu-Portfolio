@@ -21,7 +21,7 @@ export function About() {
               <img
                 alt="Minha Imagem de Perfil"
                 src={images.large}
-                srcSet={`${images.small} 375w, ${images.medium} 768w, `}
+                srcSet={`${images.small} 375w, ${images.medium} 768w, ${images.large} 1024w, `}
               />
             </S.FigureAbout>
             <S.InfoAbout>
