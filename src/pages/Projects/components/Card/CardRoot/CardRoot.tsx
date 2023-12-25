@@ -1,5 +1,5 @@
 import { ProjectContextProvider } from '../../../../../contexts/ProjectContext';
-import { ProjectProps } from '../../../projects.types';
+import { ProjectProps } from '../../../../../types/projects.types';
 import * as S from './CardRoot.styles';
 
 type ProjectsCardProps = {

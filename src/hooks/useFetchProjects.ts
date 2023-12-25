@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
-import { ProjectProps } from '../pages/Projects/projects.types';
+import { ProjectProps } from '../types/projects.types';
 
 type useFetchProjectsProps = {
   fetchProjects: () => Promise<ProjectProps[]>;

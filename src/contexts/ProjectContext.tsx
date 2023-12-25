@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import { ProjectProps } from '../pages/Projects/projects.types';
+import { ProjectProps } from '../types/projects.types';
 
 export type ProjectContextProps = {
   project: ProjectProps;
