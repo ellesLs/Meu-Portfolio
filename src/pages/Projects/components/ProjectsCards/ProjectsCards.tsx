@@ -8,14 +8,14 @@ import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 import * as S from './ProjectsCards.styles';
 
 export function ProjectsCards() {
-  const { dataProjects, isLoading, error } = useFetchProjects({ fetchProjects });
+  const { data: projects, isLoading, error } = useFetchProjects({ fetchProjects });
 
   return (
     <S.ContainerListCards>
       {isLoading && [...Array(4).keys()].map((i) => <SkeletonCard key={i} />)}
       {!isLoading &&
         !error &&
-        dataProjects?.map((project) => (
+        projects?.map((project) => (
           <Card.Root project={project} key={project.id}>
             <Card.Title />
             <Card.Images />
@@ -28,7 +28,7 @@ export function ProjectsCards() {
           </Card.Root>
         ))}
       {!isLoading && error && <div> {error?.message} </div>}
-      {!isLoading && !error && !dataProjects && <div>Deu muito ruim!</div>}
+      {!isLoading && !error && !projects && <div>Deu muito ruim!</div>}
     </S.ContainerListCards>
   );
 }

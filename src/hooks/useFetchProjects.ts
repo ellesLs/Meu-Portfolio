@@ -8,15 +8,10 @@ type useFetchProjectsProps = {
 };
 
 export function useFetchProjects({ fetchProjects }: useFetchProjectsProps) {
-  const {
-    data: dataProjects,
-    isLoading,
-    error,
-  } = useQuery({ queryKey: ['projects'], queryFn: fetchProjects });
+  const query = useQuery({ queryKey: ['projects'], queryFn: fetchProjects });
 
   return {
-    dataProjects,
-    isLoading,
-    error: axios.isAxiosError(error) ? error : null,
+    ...query,
+    error: axios.isAxiosError(query.error) ? query.error : null,
   };
 }
