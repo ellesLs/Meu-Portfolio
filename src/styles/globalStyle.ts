@@ -10,16 +10,20 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     :root {
-        font-size: 62.5%; // 1.6rem => 16px
+        font-size: 62.5%; // 1rem === 10px
 
         //ScrollBar firefox
         scrollbar-width: thin;
         scrollbar-color: #bbbbbb;
     }
 
+    #root, #__next {
+        isolation: isolate;
+    }
+
     body {
         /* font-size: 1.6rem; */
-        font-size: clamp(1.6rem, 1vw + 0.4rem, 2rem);
+        font-size: clamp(1.6rem, 1vw + 0.4rem, 2rem); // 1.6rem == 16px 
         font-family: 'Montserrat', sans-serif;
         background-color: ${({ theme }) => theme.colors.background};
     }
@@ -59,11 +63,7 @@ export const GlobalStyles = createGlobalStyle`
     p, h1, h2, h3, h4, h5, h6 {
         overflow-wrap: break-word;
     }
-
-    #root, #__next {
-        isolation: isolate;
-    }
-        
+  
     .scrollBtn-wrap {
         position: relative;
         height: 0;
