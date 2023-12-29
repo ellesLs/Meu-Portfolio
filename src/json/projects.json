@@ -6,12 +6,13 @@
             "desktopImg": "meu-portfolio-desktop",
             "mobileImg": "meu-portfolio-mobile"
         },
-        "description": "Projeto do meu portfolio pessoal feito em React com TypeScript e usando Styled-Components para a estilização",
+        "description": "O Projeto do meu portfolio pessoal feito com os conhecimentos e tecnologias que aprendo durante meus estudos.",
         "toolsUsed": [
             "HTML",
             "CSS",
             "React",
             "typescript",
+            "React Query",
             "Styled-Components"
         ],
         "liveUrl": "",
@@ -25,7 +26,7 @@
             "desktopImg": "branding-desktop",
             "mobileImg": "branding-mobile"
         },
-        "description": "Um site com dark mode que foi um dos projetos finais do curso de React que fiz na Devmedia.",
+        "description": "Este projeto é uma landing page com dark mode que foi um dos projetos finais do curso de React da Devmedia.",
         "toolsUsed": [
             "HTML",
             "CSS",
