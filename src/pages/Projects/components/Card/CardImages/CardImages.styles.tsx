@@ -25,8 +25,8 @@ export const CardImg = styled.img<CardImgProps>`
     max-width: 55%;
     max-height: 55%;
     position: absolute;
-    left: 10px;
-    bottom: 5px;
+    left: 0.5rem;
+    bottom: 0.5rem;
 
     @media screen and (max-width: 550px) {
       display: none;
