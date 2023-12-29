@@ -1,12 +1,14 @@
 import { AboutIcon } from '../AboutIcon';
 
-import { IconBrandHtml5 } from '@tabler/icons-react';
-import { IconBrandCss3 } from '@tabler/icons-react';
-import { IconBrandJavascript } from '@tabler/icons-react';
-import { IconBrandReact } from '@tabler/icons-react';
-import { IconBrandTypescript } from '@tabler/icons-react';
-import { IconBrandGithub } from '@tabler/icons-react';
-import { IconBrandGit } from '@tabler/icons-react';
+import {
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandJavascript,
+  TbBrandReact,
+  TbBrandTypescript,
+  TbBrandGit,
+} from 'react-icons/tb';
+import { IoLogoGithub } from 'react-icons/io5';
 
 import * as S from './AboutListIcons.styles';
 
@@ -15,13 +17,13 @@ export function AboutListIcons() {
     <S.ContainerTechs>
       <h3>Habilidades</h3>
       <S.ContentTechs>
-        <AboutIcon name="Html" icon={<IconBrandHtml5 />} />
-        <AboutIcon name="Css" icon={<IconBrandCss3 />} />
-        <AboutIcon name="Javascript" icon={<IconBrandJavascript />} />
-        <AboutIcon name="React" icon={<IconBrandReact />} />
-        <AboutIcon name="Typescript" icon={<IconBrandTypescript />} />
-        <AboutIcon name="Git" icon={<IconBrandGit />} />
-        <AboutIcon name="GitHub" icon={<IconBrandGithub />} />
+        <AboutIcon name="Html5" icon={<TbBrandHtml5 />} />
+        <AboutIcon name="Css3" icon={<TbBrandCss3 />} />
+        <AboutIcon name="Javascript" icon={<TbBrandJavascript />} />
+        <AboutIcon name="React" icon={<TbBrandReact />} />
+        <AboutIcon name="Typescript" icon={<TbBrandTypescript />} />
+        <AboutIcon name="Git" icon={<TbBrandGit />} />
+        <AboutIcon name="GitHub" icon={<IoLogoGithub />} />
       </S.ContentTechs>
     </S.ContainerTechs>
   );
