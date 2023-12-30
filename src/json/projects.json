@@ -26,7 +26,7 @@
             "desktopImg": "branding-desktop",
             "mobileImg": "branding-mobile"
         },
-        "description": "Este projeto é uma landing page com dark mode que foi um dos projetos finais do curso de React da Devmedia.",
+        "description": "Este projeto é uma landing page com dark mode que foi um dos desafios finais do curso de React da Devmedia.",
         "toolsUsed": [
             "HTML",
             "CSS",
