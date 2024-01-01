@@ -46,7 +46,7 @@ export const ContainerHome = styled(motion.section)`
 `;
 
 export const ContentHome = styled.div`
-  --sizeInnerContent: 370px;
+  --sizeInnerContent: 385px;
 
   width: 100%;
   /* min-height: 90vh; */
@@ -106,8 +106,19 @@ export const InfoHome = styled.div`
   strong {
     font-size: 3.8rem;
     font-weight: 900;
+    padding-right: 0.5rem;
 
+    background-color: ${({ theme }) => theme.colors.common.white};
     color: ${({ theme }) => theme.colors.primary};
+
+    background: linear-gradient(10deg, rgba(42, 74, 187, 1) 0%, rgba(0, 56, 255, 1) 90%);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
   }
 
   @media screen and (max-width: 768px) {
