@@ -33,6 +33,7 @@ export const ContentModal = styled.div`
   img {
     width: 100%;
     height: 95vh;
+    padding-inline: 1rem;
     object-fit: contain;
     cursor: zoom-out;
   }
