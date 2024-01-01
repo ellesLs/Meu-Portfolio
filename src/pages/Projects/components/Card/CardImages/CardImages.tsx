@@ -23,6 +23,7 @@ export function CardImages() {
           alt={`${project.title} desktop image`}
           onClick={() => handleClickOpenModal(project.images.desktopImg)}
           hasModal={project.modal}
+          loading="eager"
         />
         {project.images.mobileImg && (
           <S.CardImg
@@ -30,6 +31,7 @@ export function CardImages() {
             alt={`${project.title} mobile image`}
             onClick={() => handleClickOpenModal(project.images.mobileImg)}
             hasModal={project.modal}
+            loading="eager"
           />
         )}
       </S.CardImgsContainer>
