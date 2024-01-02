@@ -3,12 +3,17 @@ import axios from 'axios';
 
 import { ProjectProps } from '../types/projects.types';
 
-type useFetchProjectsProps = {
-  fetchProjects: () => Promise<ProjectProps[]>;
+//This type is for Dependency inversion
+export type FetchProjects = {
+  (): Promise<ProjectProps[]>;
 };
 
-export function useFetchProjects({ fetchProjects }: useFetchProjectsProps) {
-  const query = useQuery({ queryKey: ['projects'], queryFn: fetchProjects });
+type useFetchProjectsProps = {
+  fetchProjectsList: FetchProjects;
+};
+
+export function useFetchProjects({ fetchProjectsList }: useFetchProjectsProps) {
+  const query = useQuery({ queryKey: ['projects'], queryFn: fetchProjectsList });
 
   return {
     ...query,
