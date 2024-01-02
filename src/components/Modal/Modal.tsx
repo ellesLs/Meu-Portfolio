@@ -9,7 +9,7 @@ type ModalProps = {
 export function Modal({ image, isOpen, setIsOpen }: ModalProps) {
   if (isOpen)
     return (
-      <S.ContainerModal onClick={setIsOpen}>
+      <S.ContainerModal onClick={setIsOpen} aria-modal>
         <S.ContentModal>
           <img src={`/assets/images/projectsImgs/${image}.png`} alt="img Modal" />
         </S.ContentModal>
