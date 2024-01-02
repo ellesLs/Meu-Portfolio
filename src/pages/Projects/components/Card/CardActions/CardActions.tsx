@@ -1,4 +1,4 @@
-import * as S from './CardButtons.styles';
+import * as S from './CardActions.styles';
 
 type CardButtonsProps = {
   children: React.ReactNode;
