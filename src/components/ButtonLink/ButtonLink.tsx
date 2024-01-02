@@ -5,9 +5,9 @@ import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 type ButtonLinkProps = {
   children: React.ReactNode;
   url: string;
-  type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
   isInternalLink?: boolean;
-} & AnchorHTMLAttributes<HTMLAnchorElement>;
+} & AnchorHTMLAttributes<HTMLAnchorElement> &
+  ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function ButtonLink({
   children,
