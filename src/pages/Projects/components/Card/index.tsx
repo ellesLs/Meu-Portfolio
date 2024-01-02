@@ -1,9 +1,9 @@
 import { CardRoot } from './CardRoot';
+import { CardTitle } from './CardTitle';
 import { CardImages } from './CardImages';
 import { CardDescription } from './CardDescription';
 import { CardToolsUsed } from './CardToolsUsed';
-import { CardButtons } from './CardButtons';
-import { CardTitle } from './CardTitle';
+import { CardActions } from './CardActions';
 
 export const Card = {
   Root: CardRoot,
@@ -11,5 +11,5 @@ export const Card = {
   Images: CardImages,
   Description: CardDescription,
   Tools: CardToolsUsed,
-  Buttons: CardButtons,
+  Actions: CardActions,
 };

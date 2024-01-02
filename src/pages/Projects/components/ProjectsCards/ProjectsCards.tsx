@@ -21,10 +21,10 @@ export function ProjectsCards() {
             <Card.Images />
             <Card.Description />
             {project.toolsUsed.length > 0 && <Card.Tools />}
-            <Card.Buttons>
+            <Card.Actions>
               {project.liveUrl && <ButtonLink url={project.liveUrl}>Live</ButtonLink>}
               {project.gitHubUrl && <ButtonLink url={project.gitHubUrl}>GitHub</ButtonLink>}
-            </Card.Buttons>
+            </Card.Actions>
           </Card.Root>
         ))}
       {!isLoading && error && <div> {error?.message} </div>}

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const BtnsContainer = styled.div`
+export const ActionsContainer = styled.div`
   width: 100%;
   padding-top: 1rem;
   margin-top: auto;
