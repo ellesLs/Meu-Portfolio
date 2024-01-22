@@ -1,5 +1,4 @@
 import { Wrapper } from '../../components/Wrapper';
-import { ButtonLink } from '../../components/ButtonLink';
 import { SocialIcons } from '../../components/SocialIcons';
 import { GenericIcon } from '../../components/GenericIcon';
 import { TooltipWithClipBoard } from '../../components/TooltipWithClipBoard';
@@ -10,6 +9,7 @@ import { containerVariants } from '../../constants/variants';
 import images from './Images';
 
 import * as S from './Home.styles';
+import { ButtonLink } from '../../components/ButtonLink';
 
 export function Home() {
   const selectedImage = Math.floor(Math.random() * (images.length - 1));
@@ -26,7 +26,7 @@ export function Home() {
               Desenvolvedor <span>Front-End</span>
             </p>
             <S.ContainerLinks>
-              <ButtonLink download={false} url="/Curriculo_Elles.pdf">
+              <ButtonLink download={false} url="/Curriculo_Elles.pdf" target="_blank">
                 Download CV
               </ButtonLink>
               <SocialIcons>

@@ -1,5 +1,5 @@
 import { Wrapper } from '../../components/Wrapper';
-import { ProjectsCards } from './components/ProjectsCards';
+import { ProjectsList } from './components/ProjectsList';
 
 import { containerVariants } from '../../constants/variants';
 
@@ -19,7 +19,7 @@ export function Projects() {
         <Wrapper>
           <S.ContentProjects>
             <h2>Projetos</h2>
-            <ProjectsCards />
+            <ProjectsList />
           </S.ContentProjects>
         </Wrapper>
       </S.ContainerProjects>

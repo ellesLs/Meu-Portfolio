@@ -1,13 +1,14 @@
 import { Card } from '../Card';
-import { ButtonLink } from '../../../../components/ButtonLink';
+
 import { SkeletonCard } from '../../../../components/SkeletonCard';
 
 import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 import { fetchProjectsAxios } from '../../../../services/fetchProjectsAxios';
 
-import * as S from './ProjectsCards.styles';
+import * as S from './ProjectsList.styles';
+import { ButtonLink } from '../../../../components/ButtonLink';
 
-export function ProjectsCards() {
+export function ProjectsList() {
   const {
     data: projects,
     isLoading,
@@ -15,7 +16,7 @@ export function ProjectsCards() {
   } = useFetchProjects({ fetchProjectsList: fetchProjectsAxios });
 
   return (
-    <S.ContainerListCards>
+    <S.ContainerProjectsList>
       {isLoading && [...Array(4).keys()].map((i) => <SkeletonCard key={i} />)}
       {!isLoading &&
         !error &&
@@ -26,13 +27,21 @@ export function ProjectsCards() {
             <Card.Description />
             {project.toolsUsed.length > 0 && <Card.Tools />}
             <Card.Actions>
-              {project.liveUrl && <ButtonLink url={project.liveUrl}>Live</ButtonLink>}
-              {project.gitHubUrl && <ButtonLink url={project.gitHubUrl}>GitHub</ButtonLink>}
+              {project.liveUrl && (
+                <ButtonLink url={project.liveUrl} target="_blank">
+                  Live
+                </ButtonLink>
+              )}
+              {project.gitHubUrl && (
+                <ButtonLink url={project.gitHubUrl} target="_blank">
+                  GitHub
+                </ButtonLink>
+              )}
             </Card.Actions>
           </Card.Root>
         ))}
       {!isLoading && error && <div> {error?.message} </div>}
       {!isLoading && !error && !projects && <div>Deu muito ruim!</div>}
-    </S.ContainerListCards>
+    </S.ContainerProjectsList>
   );
 }

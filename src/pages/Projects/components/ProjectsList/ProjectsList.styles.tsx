@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerListCards = styled.section`
+export const ContainerProjectsList = styled.section`
   width: 100%;
   margin-block: 1.5rem;
 
