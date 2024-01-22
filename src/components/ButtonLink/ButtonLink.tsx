@@ -1,24 +1,21 @@
-import { Link } from 'react-router-dom';
-import * as S from './ButtonLink.styles';
 import { AnchorHTMLAttributes } from 'react';
+import { Button } from '../Button';
 
-type ButtonLinkProps = {
+import * as S from './ButtonLink.styles';
+
+type ButtonLink = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: React.ReactNode;
   url: string;
-  isInternalLink?: boolean;
-} & AnchorHTMLAttributes<HTMLAnchorElement>;
+  onClick?: () => void;
+  as?: React.ElementType;
+};
 
-export function ButtonLink({ children, url = '', isInternalLink, ...rest }: ButtonLinkProps) {
-  if (isInternalLink)
-    return (
-      <S.ButtonGeneric as={Link} to={url} {...rest}>
-        {children}
-      </S.ButtonGeneric>
-    );
-
+export function ButtonLink({ children, url = '', onClick, ...rest }: ButtonLink) {
   return (
-    <S.ButtonGeneric href={url} target="_blank" rel="noopener noreferrer" {...rest}>
-      {children}
-    </S.ButtonGeneric>
+    <Button onClick={onClick} tabIndex={-1}>
+      <S.ButtonLink href={url} rel="noopener noreferrer" {...rest}>
+        {children}
+      </S.ButtonLink>
+    </Button>
   );
 }
