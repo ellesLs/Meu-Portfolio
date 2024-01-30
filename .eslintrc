@@ -7,6 +7,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "plugin:import/typescript",
     "prettier"
@@ -17,7 +18,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks", "eslint-plugin-import-helpers"],
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -30,32 +31,6 @@
     "no-console": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "prettier/prettier": "error",
-
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        "newlinesBetween": "always",
-        "groups": [
-          "/^react/",
-          "module",
-          "/components/",
-          "/^@shared/",
-          "styles",
-          ["parent", "sibling", "index"]
-        ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ]
+    "prettier/prettier": "error"
   }
 }
-
-// "groups": [
-//   "/^react/",
-//   "/components/",
-//   "/module/",
-//   "/^@shared/",
-//   "/absolute/",
-//   "styles",
-//   ["parent", "sibling", "index"]
-// ],
