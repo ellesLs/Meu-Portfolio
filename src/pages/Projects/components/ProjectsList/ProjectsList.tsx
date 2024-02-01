@@ -6,7 +6,7 @@ import { useFetchProjects } from '../../../../hooks/useFetchProjects';
 import { fetchProjectsAxios } from '../../../../services/fetchProjectsAxios';
 
 import * as S from './ProjectsList.styles';
-import { ButtonLink } from '../../../../components/ButtonLink';
+import { ButtonLink } from '../../../../components/Button';
 
 export function ProjectsList() {
   const {

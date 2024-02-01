@@ -17,7 +17,7 @@ const ripple = keyframes`
   }
 `;
 
-export const Button = styled.button`
+const button = css`
   ${({ theme }) =>
     theme &&
     css`
@@ -38,6 +38,7 @@ export const Button = styled.button`
       font-weight: 700;
       box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.192);
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      padding: 1rem 1.5rem;
 
       display: flex;
       align-items: center;
@@ -45,17 +46,6 @@ export const Button = styled.button`
       gap: 0.5rem;
 
       transition: all 300ms ease-in-out;
-
-      *:not(svg, img) {
-        padding: 1rem 1.5rem;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-      }
 
       &:hover,
       &:focus-within {
@@ -93,4 +83,12 @@ export const Button = styled.button`
         letter-spacing: 1px;
       }
     `}
+`;
+
+export const Button = styled.button`
+  ${button}
+`;
+
+export const ButtonLink = styled.a`
+  ${button}
 `;

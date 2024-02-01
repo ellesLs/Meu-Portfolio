@@ -9,7 +9,7 @@ import { containerVariants } from '../../constants/variants';
 import images from './Images';
 
 import * as S from './Home.styles';
-import { ButtonLink } from '../../components/ButtonLink';
+import { ButtonLink } from '../../components/Button';
 
 export function Home() {
   const selectedImage = Math.floor(Math.random() * (images.length - 1));
