@@ -47,7 +47,7 @@ export function About() {
             <SocialIcons>
               <GenericIcon
                 icon={<AiFillLinkedin />}
-                url={'https://www.linkedin.com/in/elles-do-nascimento-santana-a9728b240/'}
+                url={'https://www.linkedin.com/in/elles-do-nascimento-santana/'}
               />
               <GenericIcon icon={<AiFillGithub />} url={'https://github.com/ellesLs'} />
             </SocialIcons>

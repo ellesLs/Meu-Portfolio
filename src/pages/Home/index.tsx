@@ -2,6 +2,7 @@ import { Wrapper } from '../../components/Wrapper';
 import { SocialIcons } from '../../components/SocialIcons';
 import { GenericIcon } from '../../components/GenericIcon';
 import { TooltipWithClipBoard } from '../../components/TooltipWithClipBoard';
+import { ButtonLink } from '../../components/Button';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
@@ -9,7 +10,6 @@ import { containerVariants } from '../../constants/variants';
 import images from './Images';
 
 import * as S from './Home.styles';
-import { ButtonLink } from '../../components/Button';
 
 export function Home() {
   const selectedImage = Math.floor(Math.random() * (images.length - 1));
@@ -26,13 +26,13 @@ export function Home() {
               Desenvolvedor <span>Front-End</span>
             </p>
             <S.ContainerLinks>
-              <ButtonLink download={false} url="/Curriculo_Elles.pdf" target="_blank">
+              <ButtonLink download={false} url="/Curriculo_Elles_Front.pdf" target="_blank">
                 Download CV
               </ButtonLink>
               <SocialIcons>
                 <GenericIcon
                   icon={<AiFillLinkedin />}
-                  url={'https://www.linkedin.com/in/elles-do-nascimento-santana-a9728b240/'}
+                  url={'https://www.linkedin.com/in/elles-do-nascimento-santana/'}
                 />
                 <GenericIcon icon={<AiFillGithub />} url={'https://github.com/ellesLs'} />
                 <TooltipWithClipBoard>

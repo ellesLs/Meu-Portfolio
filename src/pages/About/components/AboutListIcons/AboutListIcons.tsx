@@ -8,7 +8,7 @@ import {
   TbBrandTypescript,
   TbBrandGit,
 } from 'react-icons/tb';
-import { IoLogoGithub } from 'react-icons/io5';
+// import { IoLogoGithub } from 'react-icons/io5';
 
 import * as S from './AboutListIcons.styles';
 
@@ -23,7 +23,7 @@ export function AboutListIcons() {
         <AboutIcon name="React" icon={<TbBrandReact />} />
         <AboutIcon name="Typescript" icon={<TbBrandTypescript />} />
         <AboutIcon name="Git" icon={<TbBrandGit />} />
-        <AboutIcon name="GitHub" icon={<IoLogoGithub />} />
+        {/* <AboutIcon name="GitHub" icon={<IoLogoGithub />} /> */}
       </S.ContentTechs>
     </S.ContainerTechs>
   );

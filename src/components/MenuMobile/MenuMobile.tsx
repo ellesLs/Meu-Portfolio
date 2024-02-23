@@ -9,7 +9,7 @@ export function MenuMobile({ onToggleMenu, isOpenMenu }: MenuMobileProps) {
   return (
     <S.ContainerMenuMobile
       onClick={onToggleMenu}
-      // onKeyDown={(e) => e.key === 'Enter' && toggleMenu()}
+      onKeyDown={(e) => e.key === 'Escape' && onToggleMenu()}
       isOpen={isOpenMenu}
       aria-label={`${isOpenMenu ? 'Open' : 'Close'} Menu`}
       aria-expanded={isOpenMenu ? true : false}
