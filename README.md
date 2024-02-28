@@ -3,7 +3,10 @@
 <h2 align="center">
     <img alt="Portfolio image" title="My Personal Portfolio" src="./public/assets/images/portfolioelles.png" width="650"/>
 </h2>
-<p align="center">My personal Website to show my projects</p>
+
+## About
+
+<p align="center">Um webSite para guardar meus principais projetos/p>
 
 <h2 align="center"><a href="https://portfolioelles.vercel.app/">See in Live</a></h2>
 
