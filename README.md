@@ -6,7 +6,7 @@
 
 ## About
 
-<p align="left">Um webSite para guardar meus principais projetos</p>
+<p align="left">Um webSite para guardar meus principais projetos!</p>
 
 <h2 align="left"><a href="https://portfolioelles.vercel.app/">See in Live</a></h2>
 
